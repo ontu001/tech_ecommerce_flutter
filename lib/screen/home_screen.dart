@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: 'Raleway',
                               fontSize: 36,
-                              fontWeight: FontWeight.w600,
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
                           SizedBox(
@@ -36,12 +36,14 @@ class HomeScreen extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               fontFamily: 'Raleway',
-                              fontSize: 16.0,
+                              fontSize: 20.0,
                               letterSpacing: 1.2,
+                              color: Colors.grey
+
                             ),
                           ),
                           SizedBox(
-                            height: 50,
+                            height: 40,
                           ),
                           CarouselSlider(
                               items: [
