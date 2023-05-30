@@ -111,21 +111,115 @@ class HomeScreen extends StatelessWidget {
                               options: CarouselOptions(
                                 height: 200,
                                 aspectRatio: 16 / 9,
-                                viewportFraction: 0.9,
                                 initialPage: 0,
                                 enableInfiniteScroll: true,
-                                reverse: false,
+                                reverse: true,
                                 autoPlay: true,
                                 autoPlayInterval: Duration(seconds: 3),
                                 autoPlayAnimationDuration:
                                     Duration(milliseconds: 800),
-                                autoPlayCurve: Curves.fastOutSlowIn,
                                 enlargeCenterPage: true,
                                 enlargeFactor: 0.3,
                                 scrollDirection: Axis.horizontal,
                               ))
                         ],
                       ),
+                    ),
+                    Column(
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(right: 30.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Top Categories",style: TextStyle(fontSize: 22.0,fontWeight: FontWeight.w600),),
+                              TextButton(onPressed: (){}, child: Text("View All",style: TextStyle(color: Colors.deepOrangeAccent,fontSize: 16.0,fontWeight: FontWeight.w600),)),
+                            ],
+                          ),
+                        ),
+                        SizedBox(height: 17.1,),
+                        SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 40,
+                                width: 92,
+                                decoration: BoxDecoration(
+                                    borderRadius:
+                                    BorderRadius.circular(22.0),
+                                  color: Colors.grey,),
+                                child: Padding(
+                                  padding: EdgeInsets.all(10.0),
+                                  child: Center(
+                                    child: Text("Food",style: TextStyle(fontSize: 17,fontWeight: FontWeight.w500),),
+                                  )
+                                ),
+                              ),
+                              SizedBox(width: 8.0,),
+                              Container(
+                                height: 40,
+                                width: 130,
+                                decoration: BoxDecoration(
+                                  borderRadius:
+                                  BorderRadius.circular(22.0),
+                                  color: Colors.grey,),
+                                child: Padding(
+                                    padding: EdgeInsets.all(10.0),
+                                    child: Center(
+                                      child: Text("Electronics",style: TextStyle(fontSize: 17,fontWeight: FontWeight.w500),),
+                                    )
+                                ),
+                              ),
+                              SizedBox(width: 8.0,),
+                              Container(
+                                height: 40,
+                                width: 110,
+                                decoration: BoxDecoration(
+                                  borderRadius:
+                                  BorderRadius.circular(22.0),
+                                  color: Colors.grey,),
+                                child: Padding(
+                                    padding: EdgeInsets.all(10.0),
+                                    child: Center(
+                                      child: Text("Groceories",style: TextStyle(fontSize: 17,fontWeight: FontWeight.w500),),
+                                    )
+                                ),
+                              ),
+                              SizedBox(width: 8.0,),
+                              Container(
+                                height: 40,
+                                width: 90,
+                                decoration: BoxDecoration(
+                                  borderRadius:
+                                  BorderRadius.circular(22.0),
+                                  color: Colors.grey,),
+                                child: Padding(
+                                    padding: EdgeInsets.all(10.0),
+                                    child: Center(
+                                      child: Text("Dress",style: TextStyle(fontSize: 17,fontWeight: FontWeight.w500),),
+                                    )
+                                ),
+                              ),
+                              SizedBox(width: 8.0,),
+                              Container(
+                                height: 40,
+                                width: 94,
+                                decoration: BoxDecoration(
+                                  borderRadius:
+                                  BorderRadius.circular(22.0),
+                                  color: Colors.grey,),
+                                child: Padding(
+                                    padding: EdgeInsets.all(10.0),
+                                    child: Center(
+                                      child: Text("Gadgets",style: TextStyle(fontSize: 17,fontWeight: FontWeight.w500),),
+                                    )
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
