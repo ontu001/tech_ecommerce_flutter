@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tech_ecommerce_flutter/widgets/category.dart';
 import 'package:tech_ecommerce_flutter/widgets/caursor.dart';
+import '../widgets/bottomnavbar.dart';
 import '../widgets/grid.dart';
 
 class HomeScreen extends StatelessWidget {
